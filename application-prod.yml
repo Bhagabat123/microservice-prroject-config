@@ -10,3 +10,5 @@ eureka:
     register-with-eureka: true
   instance:
     prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5  # Send heartbeat every 5 seconds
+    lease-expiration-duration-in-seconds: 10  # Mark as down if no heartbeat in 10 sec
